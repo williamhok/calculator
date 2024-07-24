@@ -9,3 +9,9 @@ function subtract(a, b) {
 }
 
 console.log(subtract(1, 1))
+
+function multiply(a, b) {
+    return a * b
+}
+
+console.log(multiply(1, 1))
