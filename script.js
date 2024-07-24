@@ -15,3 +15,9 @@ function multiply(a, b) {
 }
 
 console.log(multiply(1, 1))
+
+function divide(a, b) {
+    return a / b
+}
+
+console.log(divide(1, 1))
