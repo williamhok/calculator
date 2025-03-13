@@ -3,4 +3,20 @@
     justify-content: center;
     align-items: center;
     background-color: aqua;
+    flex-direction: column;
+    padding: 50px;
+}
+
+.display {
+    width: 500px;
+    height: 200px;
+    background-color: blue;
+}
+
+.buttons {
+    width: 500px;
+    height: 500px;
+    background-color: red;
+    display: flex;
+    flex-direction: column;
 }
