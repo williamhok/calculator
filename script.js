@@ -13,3 +13,7 @@ buttons.forEach(button => {
         display.textContent = currInput
     })
 })
+
+function add(a, b) {
+    return a + b
+}
