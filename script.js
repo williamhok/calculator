@@ -1,15 +1,15 @@
 const calculator = document.querySelector(".calculator")
 const display = document.querySelector(".display")
-const nums = document.querySelectorAll(".num")
+const buttons = document.querySelectorAll(".btn")
 const operand = document.querySelector(".operand")
 
 let currInput = ""
 let operator = ""
 let prevInput = ""
 
-nums.forEach(num => {
-    num.addEventListener("click", () => {
-        currInput += num.value
+buttons.forEach(button => {
+    button.addEventListener("click", () => {
+        currInput += button.value
         display.textContent = currInput
     })
 })
