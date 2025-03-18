@@ -18,6 +18,8 @@ function operate(a, b) {
     switch ("=") {
         case "+":
             add(a, b)
+        case "-":
+            subtract(a, b)
     }
 }
 
