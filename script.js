@@ -14,6 +14,13 @@ buttons.forEach(button => {
     })
 })
 
+function operate(a, b) {
+    switch ("=") {
+        case "+":
+            add(a, b)
+    }
+}
+
 function add(a, b) {
     return a + b
 }
