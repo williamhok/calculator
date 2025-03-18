@@ -22,6 +22,8 @@ function operate(a, b) {
             subtract(a, b)
         case "*":
             multiply(a, b)
+        case "/":
+            divide(a, b)
     }
 }
 
