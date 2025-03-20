@@ -11,7 +11,11 @@ let prevInput = ""
 buttons.forEach(button => {
     button.addEventListener("click", () => {
         currInput += button.value
-        display.textContent = currInput
+        botDisplay.textContent = currInput
+
+        if (button.value == "+" || button.value == "-" || button.value == "*" || button.value == "/") {
+            topDisplay.textContent = currInput
+        }
     })
 })
 
