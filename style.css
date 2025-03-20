@@ -23,12 +23,18 @@
     background-color: red;
     width: 500px;
     height: 50px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 .display-bot {
     background-color: purple;
     width: 500px;
     height: 50px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 .buttons {
