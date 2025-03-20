@@ -1,5 +1,6 @@
 const calculator = document.querySelector(".calculator")
-const display = document.querySelector(".display")
+const topDisplay = document.querySelector(".display-top")
+const botDisplay = document.querySelector(".display-bot")
 const buttons = document.querySelectorAll(".btn")
 const operand = document.querySelector(".operand")
 
