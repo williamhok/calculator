@@ -14,6 +14,7 @@ buttons.forEach(button => {
         botDisplay.textContent = currInput
 
         if (button.value == "+" || button.value == "-" || button.value == "*" || button.value == "/") {
+            operator += button.value
             topDisplay.textContent = currInput
             botDisplay.textContent = ""
             prevInput = currInput
@@ -22,21 +23,24 @@ buttons.forEach(button => {
 
         if (button.value == "=") {
             topDisplay.textContent += botDisplay.textContent
-            botDisplay.textContent = ""
+            botDisplay.textContent = operate(prevInput, currInput, operator)
         }
     })
 })
 
-function operate(a, b) {
-    switch ("=") {
+function operate(prevInput, currInput, operator) {
+    const a = parseFloat(prevInput)
+    const b = parseFloat(currInput)
+
+    switch (operator) {
         case "+":
-            add(a, b)
+            return add(a, b)
         case "-":
-            subtract(a, b)
+            return subtract(a, b)
         case "*":
-            multiply(a, b)
+            return multiply(a, b)
         case "/":
-            divide(a, b)
+            return divide(a, b)
     }
 }
 
