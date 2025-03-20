@@ -15,6 +15,9 @@ buttons.forEach(button => {
 
         if (button.value == "+" || button.value == "-" || button.value == "*" || button.value == "/") {
             topDisplay.textContent = currInput
+            botDisplay.textContent = ""
+            prevInput = currInput
+            currInput = ""
         }
     })
 })
