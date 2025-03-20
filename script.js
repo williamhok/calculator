@@ -25,6 +25,16 @@ buttons.forEach(button => {
             topDisplay.textContent += botDisplay.textContent
             botDisplay.textContent = operate(prevInput, currInput, operator)
         }
+
+        if (button.value == "clear") {
+            currInput = ""
+            operator = ""
+            prevInput = ""
+
+            operator = ""
+            topDisplay.textContent = ""
+            botDisplay.textContent = ""
+        }
     })
 })
 
