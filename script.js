@@ -19,6 +19,11 @@ buttons.forEach(button => {
             prevInput = currInput
             currInput = ""
         }
+
+        if (button.value == "=") {
+            topDisplay.textContent += botDisplay.textContent
+            botDisplay.textContent = ""
+        }
     })
 })
 
