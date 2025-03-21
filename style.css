@@ -20,7 +20,6 @@
 }
 
 .display-top {
-    background-color: red;
     width: 500px;
     height: 50px;
     display: flex;
@@ -29,7 +28,6 @@
 }
 
 .display-bot {
-    background-color: purple;
     width: 500px;
     height: 50px;
     display: flex;
